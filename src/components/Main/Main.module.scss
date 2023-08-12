@@ -1,0 +1,121 @@
+@import '../../common/styles/sass/variables.scss';
+@import '../../common/styles/sass/mixins.scss';
+
+.mainBlock {
+  height: 100vh;
+
+  .container {
+    @media screen and (max-width: 1000px) {
+      flex-direction: column-reverse;
+      justify-content: center;
+      row-gap: 40px;
+      text-align: center;
+    }
+    @media screen and (max-width: 465px) {
+      row-gap: 30px;
+    }
+
+    .text {
+      .name {
+        margin-bottom: 14px;
+        @include poppinsText(75px, 600, $mainTextColor);
+        line-height: 1.1;
+        @media screen and (max-width: 1200px) {
+          font-size: 65px;
+        }
+        @media screen and (max-width: 600px) {
+          font-size: 55px;
+        }
+
+        & span {
+          color: $primaryColor;
+        }
+      }
+
+      .description {
+        margin-bottom: 35px;
+        @include poppinsText(20px, 500, $mainTextColor);
+      }
+
+      a {
+        text-decoration: none;
+      }
+
+      .btnWrapper {
+        margin-top: 35px;
+        display: flex;
+        column-gap: 20px;
+        @media screen and (max-width: 1000px) {
+          justify-content: center;
+        }
+        @media screen and (max-width: 540px) {
+          flex-direction: column;
+          justify-content: center;
+          row-gap: 20px;
+          align-items: center;
+        }
+
+        .btnGet {
+          width: fit-content;
+          border: none;
+          padding: 17px 40px;
+          background-color: $primaryColor;
+          border-radius: 50px;
+          @include poppinsText(16px, 400, $mainTextColor);
+        }
+
+        .btnCv {
+          background: rgba(0, 0, 0, 0);
+          color: $primaryColor;
+          box-shadow: inset 0 0 0 3px $primaryColor;
+          width: fit-content;
+          border: none;
+          padding: 17px 40px;
+          border-radius: 50px;
+          @include poppinsText(16px, 400, $mainTextColor);
+          transition: 0.5s;
+        }
+
+        @keyframes bounce {
+          0%, 20%, 60%, 100% {
+            transform: translateY(0);
+          }
+          40% {
+            transform: translateY(-20px);
+          }
+          80% {
+            transform: translateY(-10px);
+          }
+        }
+
+        .btnGet:hover {
+          animation: bounce 1s;
+        }
+
+        .btnCv:hover {
+          animation: bounce 1s;
+        }
+      }
+    }
+
+    .photo {
+      img {
+        width: 400px;
+        //border-radius: 50%;
+        @media screen and (max-width: 1200px) {
+          max-width: 320px;
+        }
+        @media screen and (max-width: 500px) {
+          max-width: 260px;
+        }
+        @media screen and (max-width: 400px) {
+          max-width: 240px;
+        }
+      }
+    }
+  }
+}
+
+
+
+

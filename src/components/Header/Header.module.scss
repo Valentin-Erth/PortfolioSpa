@@ -1,0 +1,75 @@
+@import '../../common/styles/sass/variables';
+@import '../../common/styles/sass/mixins';
+
+.header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #4c4c4c;
+  height: 70px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  z-index: 3;
+  transition: transform .3s linear;
+  @media screen and (max-width: 600px) {
+    height: 60px;
+  }
+
+  .container {
+    display: flex;
+    justify-content: flex-end;
+
+    .slash {
+      margin-left: 22px;
+      margin-right: 22px;
+      color: $primaryColor;
+      font-size: 18px;
+      @media screen and (max-width: 800px) {
+        display: none;
+      }
+    }
+
+    .wrapperIcon {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      column-gap: 22px;
+      width: 160px;
+      @media screen and (max-width: 800px) {
+        display: none;
+      }
+
+      .icon {
+        width: 21px;
+        height: 21px;
+        transition: 0.4s;
+
+        &:hover {
+          fill: $primaryColor;
+          transform: scale(1.5) rotate(360deg);
+        }
+      }
+    }
+
+    .mobileBtn {
+      display: none;
+      @media screen and (max-width: 600px) {
+        display: block;
+        position: absolute;
+        z-index: 11;
+      }
+    }
+
+  }
+}
+
+
+.hide {
+  transform: translateY(-70px);
+  @media screen and (max-width: 600px) {
+    transform: translateY(-60px);
+  }
+}
+

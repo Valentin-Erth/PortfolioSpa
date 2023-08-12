@@ -1,0 +1,13 @@
+@mixin poppinsText($fontSize, $fontWeight, $color) {
+  font-family: 'Poppins', sans-serif;
+  font-size: $fontSize;
+  font-weight: $fontWeight;
+  color: $color;
+}
+
+@mixin openSansText($fontSize, $fontWeight, $color) {
+  font-family: 'Open Sans', sans-serif;
+  font-size: $fontSize;
+  font-weight: $fontWeight;
+  color: $color;
+}

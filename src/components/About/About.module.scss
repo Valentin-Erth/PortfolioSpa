@@ -1,0 +1,107 @@
+@import '../../common/styles/sass/variables';
+@import '../../common/styles/sass/mixins';
+
+.aboutBlock {
+  padding: 60px 0;
+
+  .container {
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+
+    .wrapper {
+      margin-top: 75px;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      @media screen and (max-width: 1155px) {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        row-gap: 30px;
+      }
+      @media screen and (max-width: 700px) {
+        margin-top: 50px;
+        row-gap: 20px;
+      }
+
+      .photo {
+        margin-right: 20px;
+
+        img {
+          width: 400px;
+          height: 501px;
+          border-radius: 15px;
+          object-fit: cover;
+          @media screen and (max-width: 660px) {
+            width: 350px;
+            height: 451px;
+          }
+          @media screen and (max-width: 450px) {
+            width: 250px;
+            height: 331px;
+          }
+        }
+
+        @media screen and (max-width: 1150px) {
+          margin: 0;
+        }
+
+      }
+
+      .aboutMe {
+        max-width: 500px;
+
+        .title {
+          margin-bottom: 20px;
+          @include poppinsText(30px, 600, $mainTextColor)
+        }
+
+        .text {
+          @include openSansText(16px, 400, $textColor);
+          line-height: 30px;
+        }
+
+        .list {
+          margin-top: 32px;
+          display: flex;
+          justify-content: space-around;
+          border: 2px solid #625a7d;
+          border-radius: 10px;
+          flex-wrap: wrap;
+
+          .listUL {
+            padding: 25px 35px;
+            list-style-type: none;
+
+            li {
+              margin-bottom: 7px;
+
+              span {
+                @include poppinsText(16px, 500, $mainTextColor);
+                line-height: 30px;
+              }
+
+              p {
+                @include openSansText(16px, 400, $textColor);
+                line-height: 30px;
+              }
+            }
+
+            @media screen and (max-width: 562px) {
+              padding: 5px 35px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    padding-bottom: 30px;
+  }
+}
+
+
+

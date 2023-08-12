@@ -1,0 +1,38 @@
+@import "../../common/styles/sass/variables";
+@import "../../common/styles/sass/mixins";
+
+.footerBlock {
+  padding: 20px 0;
+
+  .container {
+    flex-direction: column;
+    @include openSansText(14px, 400, $textColor);
+
+    .title {
+      margin-bottom: 20px;
+    }
+
+    .wrapper {
+      display: flex;
+      column-gap: 30px;
+      margin-bottom: 20px;
+      align-items: center;
+
+      .icon {
+        width: 30px;
+        height: 30px;
+        transition: 0.4s;
+
+        &:hover {
+          fill: $primaryColor;
+          transform: scale(1.4) rotate(360deg);
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
