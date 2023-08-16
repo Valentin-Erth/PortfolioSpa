@@ -1,8 +1,8 @@
 import s from './About.module.scss'
 import styleContainer from '../../common/styles/Container.module.css'
 import {Title} from "../../common/commonComponents/Title/Title";
-import myImage from '../../assets/image/imgAbout/portret.jpg'
-import Tilt from "react-parallax-tilt";
+// import myImage from '../../assets/image/imgAbout/portret.jpg'
+// import Tilt from "react-parallax-tilt";
 import {Fade} from "react-awesome-reveal";
 import {useAppSelector} from "../../bll/store.ts";
 import {AboutType} from "../../bll/app-reducer.ts";
@@ -18,11 +18,11 @@ export const About = () => {
                     <Title title={aboutData.title} text={aboutData.description}/>
                     <div className={s.wrapper}>
 
-                        <Tilt tiltMaxAngleY={5} tiltMaxAngleX={5}>
-                            <div className={s.photo}>
-                                <img src={myImage} alt="#"/>
-                            </div>
-                        </Tilt>
+                        {/*<Tilt tiltMaxAngleY={5} tiltMaxAngleX={5}>*/}
+                        {/*    <div className={s.photo}>*/}
+                        {/*        <img src={myImage} alt="#"/>*/}
+                        {/*    </div>*/}
+                        {/*</Tilt>*/}
 
                         <div className={s.aboutMe}>
                             <h3 className={s.title}>About Me</h3>

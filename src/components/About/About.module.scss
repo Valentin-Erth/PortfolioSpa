@@ -13,7 +13,9 @@
       margin-top: 75px;
       width: 100%;
       display: flex;
+      flex-direction: column;
       justify-content: space-between;
+      align-items: center;
       flex-wrap: wrap;
       @media screen and (max-width: 1155px) {
         flex-direction: column;
@@ -52,6 +54,10 @@
 
       .aboutMe {
         max-width: 500px;
+        //display: flex;
+        //flex-direction: column;
+        //justify-content: center;
+        //align-items: center;
 
         .title {
           margin-bottom: 20px;
