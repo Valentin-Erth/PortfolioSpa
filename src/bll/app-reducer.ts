@@ -123,7 +123,7 @@ export const initialState: InitialStateType = {
     },
     projects: {
         title: 'Projects',
-        description: 'Projects I have Worked On',
+        description: 'I have Worked On',
         data: [
             {
                 id: v1(),

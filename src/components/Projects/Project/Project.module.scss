@@ -81,7 +81,7 @@
 
     .projectTitle {
       margin-bottom: 10px;
-      @include poppinsText(19px, 600, $primaryColor);
+      @include poppinsText(19px, 600, $mainTextColor);
     }
 
     .description {

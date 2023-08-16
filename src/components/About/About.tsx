@@ -25,7 +25,7 @@ export const About = () => {
                         {/*</Tilt>*/}
 
                         <div className={s.aboutMe}>
-                            <h3 className={s.title}>About Me</h3>
+                            {/*<h3 className={s.title}>About Me</h3>*/}
                             <p className={s.text}>{aboutData.textMe}</p>
                             <div className={s.list}>
                                 <ul className={s.listUL}>
