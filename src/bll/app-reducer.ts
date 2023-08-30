@@ -128,7 +128,7 @@ export const initialState: InitialStateType = {
             {
                 id: v1(),
                 title: 'To-Do List',
-                link: '#',
+                link: 'https://todolist-rtk-three.vercel.app',
                 description: 'Create, edit and delete TO-DO Lists, manage tasks that can be customized for you and your team',
                 img: {
                     backgroundImage: `url(${todoImg})`
